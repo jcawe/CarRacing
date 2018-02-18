@@ -22,7 +22,7 @@ namespace Car_Racing.Assets.Scripts
 
         protected WheelCollider _wheel;
 
-        void Start() => _wheel = GetComponent<WheelCollider>();
+        void Awake() => _wheel = GetComponent<WheelCollider>();
 
         public virtual void Update()
         {

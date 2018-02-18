@@ -184,13 +184,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 23971683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f27b06692984d34c8be2d277f561d27, type: 3}
+  m_Script: {fileID: 11500000, guid: ae4994ec642842340adda224ebf40d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorqueWheels:
-  - {fileID: 1918686500}
-  - {fileID: 1668165951}
---- !u!114 &23971686
+  Controller: {fileID: 333083563}
+--- !u!114 &23971685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -198,21 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 23971683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f723312315aa6d146b1b41f06f8332d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SteerWheels:
-  - {fileID: 1918686500}
-  - {fileID: 1668165951}
---- !u!114 &23971688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23971683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eca146459a8f3c49be6168c1b7fb96f, type: 3}
+  m_Script: {fileID: 11500000, guid: 09f9021dd4ce6a64d9d69e461587f287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Wheels:
@@ -1158,6 +1142,7 @@ GameObject:
   - component: {fileID: 333083567}
   - component: {fileID: 333083566}
   - component: {fileID: 333083569}
+  - component: {fileID: 333083563}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -1165,6 +1150,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &333083563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333083562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7029185e15d0ef428246c0aa7705556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &333083566
 MonoBehaviour:
   m_ObjectHideFlags: 0
