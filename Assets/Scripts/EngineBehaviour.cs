@@ -5,7 +5,7 @@ namespace Car_Racing.Assets.Scripts
 {
     public class EngineBehaviour : MonoBehaviour
     {
-        [SerializeField] public TorqueWheel[] TorqueWheels;
+        [SerializeField] public Wheel[] TorqueWheels;
 
         private IEngineController _engineController;
 

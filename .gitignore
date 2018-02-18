@@ -35,9 +35,11 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-#VS Core projects
 #VS Core binaries
-/Assets/Plugins//Core.dll
+/Assets/Plugins/Core.dll
+/Assets/Plugins/Core.pdb
+/Assets/Plugins/Core.dll.meta
+/Assets/Plugins/Core.pdb.meta
 VS/Core/[Bb]in/
 VS/Core/[Oo]bj/
 VS/Core.Test/[Bb]in/

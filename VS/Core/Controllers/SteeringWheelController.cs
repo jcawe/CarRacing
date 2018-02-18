@@ -4,9 +4,9 @@ namespace Core.Controllers
 {
     public class SteeringWheelController : ISteeringWheelController
     {
-        private readonly ISteerWheel[] _steerWheels;
+        private readonly IWheel[] _steerWheels;
 
-        public SteeringWheelController(params ISteerWheel[] steerWheels) => _steerWheels = steerWheels;
+        public SteeringWheelController(params IWheel[] steerWheels) => _steerWheels = steerWheels;
 
         public void Steer(float steerAngle)
         {

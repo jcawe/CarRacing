@@ -188,7 +188,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TorqueWheels:
-  - {fileID: 1918686501}
+  - {fileID: 1918686500}
+  - {fileID: 1668165951}
+--- !u!114 &23971686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23971683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f723312315aa6d146b1b41f06f8332d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteerWheels:
+  - {fileID: 1918686500}
+  - {fileID: 1668165951}
+--- !u!114 &23971688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23971683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eca146459a8f3c49be6168c1b7fb96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wheels:
+  - {fileID: 1480034289}
+  - {fileID: 1918686500}
+  - {fileID: 1934696403}
   - {fileID: 1668165951}
 --- !u!1001 &27994844
 Prefab:
@@ -4276,6 +4306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ecfe5bfecf12941b25eabdec96f704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxBrake: 1000
+  maxTorque: 0
+  maxSteerAngle: 0
 --- !u!1001 &1482693356
 Prefab:
   m_ObjectHideFlags: 0
@@ -4802,20 +4835,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1668165948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facf85be9e09be948949d2592ed216f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 57ecfe5bfecf12941b25eabdec96f704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1668165952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1668165948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33e96320d271dc348a47101e219fd22e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  maxBrake: 1000
+  maxTorque: 1000
+  maxSteerAngle: 30
 --- !u!1001 &1788918814
 Prefab:
   m_ObjectHideFlags: 0
@@ -5161,20 +5186,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1918686497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33e96320d271dc348a47101e219fd22e, type: 3}
+  m_Script: {fileID: 11500000, guid: 57ecfe5bfecf12941b25eabdec96f704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1918686501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1918686497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facf85be9e09be948949d2592ed216f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  maxBrake: 1000
+  maxTorque: 1000
+  maxSteerAngle: 30
 --- !u!1 &1922748973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,6 +5358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ecfe5bfecf12941b25eabdec96f704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxBrake: 1000
+  maxTorque: 0
+  maxSteerAngle: 0
 --- !u!1001 &1951173036
 Prefab:
   m_ObjectHideFlags: 0
@@ -5405,6 +5425,16 @@ Prefab:
       propertyPath: Display
       value: 
       objectReference: {fileID: 1120674904}
+    - target: {fileID: 114857300118295822, guid: 92f94aa51bc1b8c47b15a3af5c08f6e7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146239266570289928, guid: 92f94aa51bc1b8c47b15a3af5c08f6e7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114205477969264384, guid: 92f94aa51bc1b8c47b15a3af5c08f6e7, type: 2}
     - {fileID: 114772421067894366, guid: 92f94aa51bc1b8c47b15a3af5c08f6e7, type: 2}

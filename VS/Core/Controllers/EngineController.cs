@@ -4,9 +4,9 @@ namespace Core.Controllers
 {
     public class EngineController : IEngineController
     {
-        private readonly ITorqueWheel[] _torqueWheels;
+        private readonly IWheel[] _torqueWheels;
 
-        public EngineController(params ITorqueWheel[] torqueWheels) => _torqueWheels = torqueWheels;
+        public EngineController(params IWheel[] torqueWheels) => _torqueWheels = torqueWheels;
 
         public void SpeedUp(float torque)
         {
